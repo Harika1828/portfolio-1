@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GROCERY STORE</title>
+    <style>
+        body {
+            background-color: rgb(140, 141, 140);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .HOMEDECOR {
+            background-color: #eaeae6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="PROFILE()">PROFILE</a></li>
+        <li><a href="#" onclick="cart()">CART</a></li>
+        <li><a href="#" onclick="signIn()">SIGN IN</a></li>
+        <li><a href="#" onclick="goToAbout()">ABOUT</a></li>
+        <P ALIGN ="CENTER"><INPUT TYPE="TEXT" placeholder="SEARCH"></P>
+    </ul>
+
+    <h1 align="center">DECOR HEAVEN</h1>
+    <H2 ALIGN="CENTER">LET'S DECORATE TOGETHER</H2>
+    <p align="center">Welcome to Your <B>DECOOR HEAVEN </B>, where we turn houses into homes!<BR>
+         At Your Decor HEAVEN, we believe that your living space should reflect your personality and style. <BR>
+        Our passion for creating beautiful, functional, and inspiring interiors drives everything we do
+    </p>
+
+   
+    <h2 align="center"> LET'S SHOP...</h2>
+    <section>
+        <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #fdf9f9;" class="HOMEDECOR">
+             <img src="https://diybaazar.com/publicuploads/seller/products/plrk-metal-iron-ganesha-t-light-multicolour-stone-candle-holder-home-decorative-itemshome-decor-items-for-living-roompooja-room-diwali-gift-items-2551-3502-1_diybaazar63347b3fb83a7.jpg" width="300px" height="250px" alt="IMAGE">
+             <p style="color:white"> METAL IRON GANESHA </p>
+             <h2 style="color:white">PRICE:599 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+        </div>
+
+        <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="HOMEDECOR">
+             <img src="https://m.media-amazon.com/images/I/51KlBOeQSjL._SX679_.jpg" width="300px" height="250" alt="IMAGE">   
+             <P  style="color:white">METAL FLOWER FLOOR STAND</P>
+             <h2 style="color:white">PRICE:1499 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+        </div>
+  
+         <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="HOMEDECOR">
+             <img src="https://www.nobroker.in/blog/wp-content/uploads/2021/07/home-decor-trends.jpg" width="300px" height="250px"alt="IMAGE">
+             <P  style="color:white">SWING CHAIR</P>
+             <h2 style="color:white">PRICE:4999 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+        </div>
+
+         <div style="background-color:#0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="HOMEDECOR">
+             <img src="https://images.woodenstreet.de/image/cache/data%2FHandicraft+Town%2Fmodern-roman-theme-colorful-premium-wall-clock%2F1-750x650.jpg" width="300px" height="250px"alt="IMAGE">
+             <P  style="color:white">DECOR CLOCK</P>
+             <h2 style="color:white">PRICE:1999 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+        </div>
+
+         <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="HOMEDECOR">
+             <img src="https://hometown.gumlet.io/media/cms/icons/Kitchenware/figurines.jpg?w=200&dpr=2.6" width="300px" height="250px"alt="IMAGE">
+             <P style="color:white">BUDDHA STATUE</P>
+             <h2 style="color:white">PRICE:2499 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+         </div>
+
+        <div style="background-color: #6c1313; padding: 20px; border: 1px solid #120c0c;" class="HOMEDECOR">
+             <img src="https://m.media-amazon.com/images/I/81mPRg+fp5L._SX679_.jpg" width="300px" height="250px"alt="IMAGE">
+             <P style="color:white">MINI GREEN PLANT</P>
+             <h2 style="color:white">PRICE:499 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+        </div>
+
+         <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="HOMEDECOR">
+             <img src="https://ouchcart.com/cdn/shop/products/61f9KZKQpiL._SL1000_1024x.jpg?v=1634729515" WIDTH="250px" height="250px"alt="IMAGE">
+             <P style="color:white">WALL SHELVES</P>
+             <h2 style="color:white">PRICE:899 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+             
+        </div>
+
+         <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://hitchki.in/wp-content/uploads/In-Circle-Antique-Peacock-Wall-Decor-1.jpg.webp" width="280px" height="250px"alt="IMAGE">
+             <P style="color:white">PEACOCK ANTIQUE LIGHT</P>
+             <h2 style="color:white">PRICE:4889 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+         </div>
+
+
+         <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://images.woodenstreet.de/image/data/book-shelves/cagney-bookshelf-revised/honey/updated/1.jpg" width="300px" height="250px"alt="IMAGE">
+             <P style="color:white">BOOKS SHELF</P>
+             <h2 style="color:white">PRICE:1859 INR </h2> 
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+ 
+  
+         </div>
+
+         <div style="background-color: #0a0a0a; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://m.media-amazon.com/images/I/81GMA7-8P6L.jpg" width="300px" height="250px" alt="image">
+             <P style="color:white">HANGING LAMP</P>
+             <h2 style="color:white" >PRICE:2299 INR</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+         </div>
+  
+    </section>
+<P align="center">Thank you for choosing <b>DECOR HEAVEN</b>.
+</P>
+
+
+<footer>
+  &copy; 2023 HOME DEDCOR
+</footer>
+
+<script>
+     
+  function signIn() {
+        // Replace 'signin.html' with the actual URL of your sign-in page
+        window.location.href = 'signin.html';
+    }
+
+    function goToAbout() {
+        // Replace 'about.html' with the actual URL of your about page
+        window.location.href = 'about.html';
+    }
+</script>
+</body>
+</html>
+

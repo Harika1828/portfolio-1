@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GROCERY STORE</title>
+    <style>
+        body {
+            background-color: rgb(91, 130, 60);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .GROCERY {
+            background-color: #eaeae6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">BEST PRICE</h1>
+    <H2 ALIGN="CENTER">A GROCERY STORE</H2>
+    <p align="center">Welcome to <B>BEST PRICE</B>, where freshness meets convenience! Established in 2023,<BR>
+         we take pride in providing a curated selection of high-quality groceries <BR>
+         to meet the diverse needs of our valued customers.
+    </p>
+
+    <ul>
+        <li><a href="# cart">CART</a></li>
+        <li><a href="#" onclick="signIn()">SIGN IN</a></li>
+        <li><a href="#" onclick="goToAbout()">ABOUT</a></li>
+        <P ALIGN ="CENTER"><INPUT TYPE="TEXT" placeholder="SEARCH"></P>
+    </ul>
+
+    <h2 align="center"> SHOP BY CATEGORY</h2>
+    <section>
+        <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://images-eu.ssl-images-amazon.com/images/I/61pPVRyfmgL._AC_UL330_SR330,330_.jpg" width="300px" height="250px" alt="IMAGE">
+             <p>FOODGRAINS, OIL AND MASSALAS</p>
+             <h2>UP TO 35% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+        </div>
+
+        <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://hips.hearstapps.com/hmg-prod/images/online-buying-and-delivery-concept-royalty-free-image-1675370119.jpg?crop=0.74996xw:1xh;center,top&resize=1200:*" width="300px" height="250" alt="IMAGE">   
+             <P>FRUITS AND VEGETABLE</P>
+             <h2>UP TO 24% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+        </div>
+  
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://images.yourstory.com/cs/2/f02aced0d86311e98e0865c1f0fe59a2/meat-market-1631087019664.png?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces" width="300px" height="250px"alt="IMAGE">
+             <P>EGG , MEAT AND FISH</P>
+             <h2>UP TO 25% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+        </div>
+
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://mypetz.co.in/wp-content/uploads/2023/04/5.jpg" width="300px" height="250px"alt="IMAGE">
+             <P>PET ITEMS</P>
+             <h2>UP TO 18% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+        </div>
+
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://rukminim2.flixcart.com/image/850/1000/kuipea80/home-cleaning-set/c/d/5/spc12-spn-original-imag7mpht9rzmngh.jpeg?q=90" width="300px" height="250px"alt="IMAGE">
+             <P>CLEANING AND HOUSEHOLD</P>
+             <h2>UP TO 15% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+         </div>
+
+        <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://images.yourstory.com/cs/4/211ccaf00e6d11e997fe8f165dce9bb1/Imageifxu-1596799036123-1601633425902.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces" width="300px" height="250px"alt="IMAGE">
+             <P>BEAUTY ITEMS</P><h2>UP TO 20% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+        </div>
+
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://www.packagingdigest.com/sites/packagingdigest.com/files/AdobeStock_279692163_Editorial_Use_Only-Beverage-FTR-new.jpg" WIDTH="250px" height="250px"alt="IMAGE">
+             <P> BEVERAGES</P>
+             <h2>UP TO 40% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+        </div>
+
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://giftcart.com/cdn/shop/products/cm03gbgt1811-0.webp?v=1657790178" width="280px" height="250px"alt="IMAGE">
+             <P>BABY CARE PRODUCT</P>
+             <h2>UP TO 25% OFF</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+  
+         </div>
+
+
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://5.imimg.com/data5/UI/GS/MY-39694021/amul-dairy-products-500x500.jpg" width="300px" height="250px"alt="IMAGE">
+             <P>DAIRY PRODUCT</P><h2>UP TO 12% OFF </h2> 
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+ 
+  
+         </div>
+
+         <div style="background-color: #f0f0f0; padding: 20px; border: 1px solid #120c0c;" class="GROCERY">
+             <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c25hY2t8ZW58MHx8MHx8fDA%3D" width="300px" height="250px" alt="image">
+             <P>CHOCALATE</P>
+             <h2>UP TO 10%</h2>
+             <button onclick="addToCart('Product 1', 10.91)">Add to Cart</button>
+
+         </div>
+  
+    </section>
+<P align="center">Thank you for choosing <b>BEST PRICE</b>.<br>
+     We look forward to being your trusted partner in fulfilling your grocery needs.<br> 
+     Happy shopping!"
+</P>
+
+
+<footer>
+  &copy; 2023 GROCERY STORE
+</footer>
+
+<script>
+     
+  function signIn() {
+        // Replace 'signin.html' with the actual URL of your sign-in page
+        window.location.href = 'signin.html';
+    }
+
+    function goToAbout() {
+        // Replace 'about.html' with the actual URL of your about page
+        window.location.href = 'about.html';
+    }
+</script>
+</body>
+</html>
+
